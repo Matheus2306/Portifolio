@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --colorfontBase: #fff;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  color: var(--colorfontBase);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+.margin {
+  margin: 150px;
+}
+#canvas {
+  z-index: -20;
+  position: absolute;
+}
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+#Navegar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Navegar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+}
+#Navegar a:hover::after {
+  width: 100%;
+  background-color: #fff;
+
+  transition: 0.5s;
+}
+
+.button {
+  display: block;
+  background-color: #0f0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+.button:hover {
+  background-color: #0c0;
+  cursor: pointer;
+}
+
+#menu-nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 200px;
+}
+#menu-nav a {
+  color: var(--colorfontBase);
+  text-decoration: none;
+  text-align: center;
+}
+#Sobre {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#animation {
+  animation: caindo 2s infinite;
+}
