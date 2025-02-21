@@ -3,7 +3,7 @@ $(document).ready(function () {
   let ctx = canvas.getContext("2d");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  let textArray = "0123456789abcdefghijklmnopqrstuvwxyz".split('');
+  let textArray = "0123456789abcdefghijklmnopqrstuvwxyz@#$%&*!?".split('');
   let fontSize = 16;
   let columns = canvas.width / fontSize;
   let drops = [];
